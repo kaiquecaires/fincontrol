@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.total}>
         <span className={styles.totalTitle}>Bem vindo Kaique, seu patrimônio é:</span>
-        <div className={styles.totalValue}>
+        <div className={styles.valueContainer}>
           <span className={styles.type}>R$</span>
           <span className={styles.value}>1000,00</span>  
         </div>
@@ -13,13 +13,19 @@ export default function Home() {
 
       <div className={styles.balance}>
         <div className={styles.income}>
-          <span className={styles.incomeTitle}>Ganhos</span>
-          <span className={styles.incomeValue}>R$ 1000,00</span>
+          <span className={styles.title}>Ganhos</span>
+          <div className={styles.valueContainer}>
+            <span className={styles.type}>R$</span>
+            <span className={styles.value}>1000,00</span>  
+          </div>
         </div>
 
         <div className={styles.outcome}>
-          <span className={styles.outcomeTitle}>Gastos</span>
-          <span className={styles.outcomeValue}>R$ 1000,00</span>
+          <span className={styles.title}>Gastos</span>
+          <div className={styles.valueContainer}>
+            <span className={styles.type}>R$</span>
+            <span className={styles.value}>1000,00</span>  
+          </div>
         </div>
       </div>
       <div className={styles.transactions}></div>
