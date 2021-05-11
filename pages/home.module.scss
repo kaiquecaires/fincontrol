@@ -46,9 +46,14 @@
   }
 
   .title {
-    display: block;
     padding-top: 3rem;
     padding-left: 3rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 0.8rem;
+    }
   }
 
   .valueContainer {
@@ -58,6 +63,51 @@
     .value {
       font-size: 2.4rem;
       margin-left: 3rem;
+    }
+  }
+}
+
+.transactionsContainer {
+  width: 100%;
+  margin-top: 3rem;
+
+  .transactionsHeader {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .transactions {
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+
+    .transaction {
+      display: flex;
+      justify-content: space-between;
+      height: 8rem;
+      align-items: center;
+      background: var(--dark-500);
+      border-top: 1px solid var(--dark-700);
+
+      &:first-child {
+        border: none;
+      }
+
+      .transactionTitle {
+        margin-left: 3rem;
+      }
+
+      .transactionOutcome {
+        margin-right: 3rem;
+        color: var(--red-500);
+      }
+
+      .transactionIncome {
+        margin-right: 3rem;
+      }
     }
   }
 }
